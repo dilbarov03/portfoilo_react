@@ -337,7 +337,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner a:hover svg {
 	margin-left: 25px;
 }
-.banner .banner-mg img {
+.banner .banner-img img {
 	animation: updown 3s linear infinite;
 }
 @keyframes updown {
