@@ -4,14 +4,15 @@ import emailjs from "emailjs-com";
 import contactImg from "../assets/img/contact-img.svg";
 import { useToast } from "./Toast";
 
+const formInitialDetails = {
+	firstName: "",
+	lastName: "",
+	email: "",
+	phone: "",
+	message: "",
+};
+
 export const Contact = () => {
-	const formInitialDetails = {
-		firstName: "",
-		lastName: "",
-		email: "",
-		phone: "",
-		message: "",
-	};
 	const toast = useToast();
 	const [formDetails, setFormDetails] = useState(formInitialDetails);
 	const [buttonText, setButtonText] = useState("Send");
@@ -73,7 +74,7 @@ export const Contact = () => {
 									<Col size={12} sm={6} className="px-2">
 										<input
 											type="text"
-											value={formDetails.lasttName}
+											value={formDetails.lastName}
 											placeholder="Last Name"
 											onChange={e => onFormUpdate("lastName", e.target.value)}
 										/>

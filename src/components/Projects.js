@@ -19,7 +19,7 @@ export const Projects = () => {
 			};
 			fetchCategories();
 		}
-	}, []);
+	}, [allCategories.length]);
 
 	useEffect(() => {
 		if (allProjects.length === 0) {
